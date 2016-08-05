@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<!-------LINK TO THE JAVASCRIPT FILE------>
-    <script src= "exercise_script.js"></script>
+<html lang="en">
+<head>
+  <title>Exercise 1</title>
+  <!-------LINK TO THE JAVASCRIPT FILE------>
+    <script src= "exercise_1_aug_5.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  <!------SOME BOOTSTRAP SET-UP------------>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+    /*  background-color: #f1f1f1;*/
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
 
-<!-------MAKE THE FORM------>
+
+<body>
+<!--------------------------MAKING TABS AND SEARCH BAR------------------------------------------->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">R</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="library.html">Library</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--------MAKING CONTAINERS AND BOXES--------------->
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    </div>
+    <div class="col-sm-8 text-left">
+    <!-------MAKE THE FORM------>
 <form name="quiz" method="post" name="buttons" id="quiz" onsubmit="return false">
 <!-----QUESTION 1---------->
-<li><div class="question">Read this sentence from paragraph 4. Instead of paying Tama with money, the company pays her with cat food.
+<li><div class="question"><b>1.</b>Read this sentence from paragraph 4. Instead of paying Tama with money, the company pays her with cat food.
             This sentence helps the reader know that the train company--</div></li>
 <input id="answer" type="radio" name="question_1" value="right"> A) Treats Tama well<br>
 <input id="answer" type="radio" name="question_1" value="wrong"> B) Has too much food<br>
@@ -13,14 +88,14 @@
 <input id="answer" type="radio" name="question_1" value="wrong">  D) Wants to find a new home for Tama<hr>
 
 <!-------QUESTION 2----->
-<li><div class="question">Throughout the selection, the author describes Tama as being --</div></li>
+<li><div class="question"><b>2. </b>Throughout the selection, the author describes Tama as being --</div></li>
 <input id="answer" type="radio" name="question_2" value="wrong">A) Adventurous<br>
 <input id="answer" type="radio" name="question_2" value="wrong">B) Brave<br>
 <input id="answer" type="radio" name="question_2" value="right">C) Friendly<br>
 <input id="answer" type="radio" name="question_2" value="wrong">D) Clever<hr>
 
 <!-------QUESTION 3------->
-<li><div class="question">Why did the train company decide to operate the station without workers?</div></li>
+<li><div class="question"><b>3.</b>Why did the train company decide to operate the station without workers?</div></li>
 <input id="answer" type="radio" name="question_3" value="wrong">A) The train company was unable to find a person who wanted the job of
             stationmaster.<br>
 <input id="answer" type="radio" name="question_3" value="wrong"> B) The people who came to the train station were there only to see the
@@ -29,28 +104,28 @@
 <input id="answer" type="radio" name="question_3" value="right" > D) The train company was not earning enough money to pay people.<hr>
 
 <!-------QUESTION 4--------->
-<li><div class="question">Tama has been given two cat assistants because she --</div></li>
+<li><div class="question"><b>4.</b>Tama has been given two cat assistants because she --</div></li>
 <input id="answer" type="radio" name="question_4" value="wrong">A) Is too busy to work<br>
 <input id="answer" type="radio" name="question_4" value="wrong"> B) Is too famous to work<br>
 <input id="answer" type="radio" name="question_4" value="right" >C) Needs more time to rest<br>
 <input id="answer" type="radio" name="question_4" value="wrong"> D) Needs more time to eat<hr>
 
 <!-------QUESTION 5---------->
-<li><div class="question">The reader can tell that Tama is allowed to stay at the station because she--</div></li>
+<li><div class="question"><b>5.</b>The reader can tell that Tama is allowed to stay at the station because she--</div></li>
 <input id="answer" type="radio" name="question_5" value="wrong">A) Cares for other cats<br>
 <input id="answer" type="radio" name="question_5" value="wrong"> B) Walks people to the train<br>
 <input id="answer" type="radio" name="question_5" value="wrong"> C) Sits inside the ticket booth<br>
 <input id="answer" type="radio" name="question_5" value="right" >D) Attracts more passengers<hr>
 
 <!---------QUESTION 6---------->
-<li><div class="question">In paragraph 7, the word promoted means--</div></li>
+<li><div class="question"><b>6.</b>In paragraph 7, the word promoted means--</div></li>
 <input id="answer" type="radio" name="question_6" value="wrong">A) Finished with a task<br>
 <input id="answer" type="radio" name="question_6" value="wrong">B) Discussed by others<br>
 <input id="answer" type="radio" name="question_6" value="wrong">C) Required to work more hours<br>
 <input id="answer" type="radio" name="question_6" value="right" >D) Given a better job<hr>
 
 <!-------QUESTION 7------------->
-<li><div class="question">Which sentence shows that people are interested in learning about Tama?</div></li>
+<li><div class="question"><b>7.</b>Which sentence shows that people are interested in learning about Tama?</div></li>
 <input id="answer" type="radio" name="question_7" value="wrong">A) She spent most of her time at Kishi Station<br>
 <input id="answer" type="radio" name="question_7" value="wrong"> B) She walks around the station in her uniform and greets passengers<br>
 <input id="answer" type="radio" name="question_7" value="right" >C) Tama has been featured in many newspaper and magazine articles as well as
@@ -58,21 +133,34 @@ on television shows and in video clips<br>
 <input id="answer" type="radio" name="question_7" value="wrong"> D)From stray cat to famous stationmaster, life is sweet for Tama!<hr>
 
 <!---------QUESTION 8----------->
-<li><div class="question">In what way does Tama’s presence at the train station help the nearby town?</div></li>
+<li><div class="question"><b>8.</b>In what way does Tama’s presence at the train station help the nearby town?</div></li>
 <input id="answer" type="radio" name="question_8" value="wrong">A) People in the town want to work at the train station<br>
 <input id="answer" type="radio" name="question_8" value="wrong">B) People in the town enjoy taking pictures with the visitors<br>
 <input id="answer" type="radio" name="question_8" value="right" >C) People who come to see Tama often spend money in the town<br>
 <input id="answer" type="radio" name="question_8" value="wrong"> D) People who come to see Tama want to move to the town<hr>
 
 <!----------QUESTION 9---------->
-<li><div class="question">The author wrote this selection most likely to--</div></li>
+<li><div class="question"><b>9.</b>The author wrote this selection most likely to--</div></li>
 <input id="answer" type="radio" name="question_9" value="wrong">Show the reader how cats are different from other animals<br>
 <input id="answer" type="radio" name="question_9" value="wrong"> Explain why some stray cats like to be around people<br>
 <input id="answer" type="radio" name="question_9" value="wrong"> Share an opinion about why cats make great pets<br>
 <input id="answer" type="radio" name="question_9" value="right" >Inform the reader about a special cat that lives in an unusual place<hr>
 
 <!----CREATE BUTTON WITH FUNCTION CALL--------------->
-<button class="submit" onclick="return handleClick();" type="submit">Submit</button>
-    
+<button class="submit" onclick="return Handleclick();" type="submit">Submit</button>
+  
+<!------CLOSE FORM-------------->  
 </form>
+      
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
 </html>
+
