@@ -41,11 +41,12 @@
         padding: 15px;
       }
       .row.content {height:auto;}
+      }
       .panel{
         border:25px solid #6fff80
         
         }
-    }
+    
   </style>
 </head>
 
@@ -68,16 +69,11 @@
         <li><a href="about.html">About</a></li>
         <li><a href="library.html">Library</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
 <!--------MAKING CONTAINERS AND BOXES--------------->
-
-
 <div class="panel panel-default">
   <div class="panel-body">
     <div class="container-fluid text-center">
@@ -101,7 +97,6 @@
 <input id="answer" type="radio" name="question_2" value="wrong">B) Brave<br>
 <input id="answer" type="radio" name="question_2" value="right">C) Friendly<br>
 <input id="answer" type="radio" name="question_2" value="wrong">D) Clever<hr>
-
 <!-------QUESTION 3------->
 <li><div class="question"><b>3.</b>Why did the train company decide to operate the station without workers?</div></li>
 <input id="answer" type="radio" name="question_3" value="wrong">A) The train company was unable to find a person who wanted the job of
@@ -110,14 +105,12 @@
             stationmaster cat.<br>
 <input id="answer" type="radio" name="question_3" value="wrong"> C) The train station was located in an area where people did not want to work.<br>
 <input id="answer" type="radio" name="question_3" value="right" > D) The train company was not earning enough money to pay people.<hr>
-
 <!-------QUESTION 4--------->
 <li><div class="question"><b>4.</b>Tama has been given two cat assistants because she --</div></li>
 <input id="answer" type="radio" name="question_4" value="wrong">A) Is too busy to work<br>
 <input id="answer" type="radio" name="question_4" value="wrong"> B) Is too famous to work<br>
 <input id="answer" type="radio" name="question_4" value="right" >C) Needs more time to rest<br>
 <input id="answer" type="radio" name="question_4" value="wrong"> D) Needs more time to eat<hr>
-
 <!-------QUESTION 5---------->
 <li><div class="question"><b>5.</b>The reader can tell that Tama is allowed to stay at the station because she--</div></li>
 <input id="answer" type="radio" name="question_5" value="wrong">A) Cares for other cats<br>
@@ -139,14 +132,12 @@
 <input id="answer" type="radio" name="question_7" value="right" >C) Tama has been featured in many newspaper and magazine articles as well as
 on television shows and in video clips<br>
 <input id="answer" type="radio" name="question_7" value="wrong"> D)From stray cat to famous stationmaster, life is sweet for Tama!<hr>
-
 <!---------QUESTION 8----------->
 <li><div class="question"><b>8.</b>In what way does Tama’s presence at the train station help the nearby town?</div></li>
 <input id="answer" type="radio" name="question_8" value="wrong">A) People in the town want to work at the train station<br>
 <input id="answer" type="radio" name="question_8" value="wrong">B) People in the town enjoy taking pictures with the visitors<br>
 <input id="answer" type="radio" name="question_8" value="right" >C) People who come to see Tama often spend money in the town<br>
 <input id="answer" type="radio" name="question_8" value="wrong"> D) People who come to see Tama want to move to the town<hr>
-
 <!----------QUESTION 9---------->
 <li><div class="question"><b>9.</b>The author wrote this selection most likely to--</div></li>
 <input id="answer" type="radio" name="question_9" value="wrong">Show the reader how cats are different from other animals<br>
@@ -157,9 +148,7 @@ on television shows and in video clips<br>
 </div>
 
 
-<!----CREATE BUTTON WITH FUNCTION CALL--------------->
-<button class="submit" onclick="return Handleclick();" type="submit">Submit</button>
-  
+
 <!------CLOSE FORM-------------->  
 </form>
       
@@ -168,10 +157,14 @@ on television shows and in video clips<br>
     </div>
   </div>
 </div>
-
+<!----CREATE BUTTON WITH FUNCTION CALL--------------->
+<div class="container-fluid">
+<div class="row">
+<button class="submit" onclick="return Handleclick();" type="submit">Submit</button>
+  </div>
+  </div>
 
 
 
 </body>
 </html>
-
