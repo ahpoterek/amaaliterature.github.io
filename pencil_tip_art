@@ -1,0 +1,119 @@
+<!--------A hardworking cat------------------>
+<!DOCTYPE html>
+<html lang="en">
+<link rel= "stylesheet" href="exercise_stylesheet.css">
+    <!------Linking JavaScript File-->
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .panel{
+        border:25px}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    .jumbotron {
+    background-color: #6fff80;
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">R</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="library.html">Library</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center" style="background-color:#ffffff;>
+  <div class="row content">
+    <div class="col-sm-2 sidenav" >
+      <p><a href="exercise_1.html" style="background-color:6fff80">Reading Comprehension Quiz</a></p>
+      <p><a href="#">Vocabulary</a></p>
+      <p><a href="#">Writing Exercise</a></p>
+    </div>
+    <div class="col-sm-8 text-left">
+    <div class= "jumbotron" style= "background-color: #98ff98">
+    <div class="container text-center">
+      <div class="panel panel-default">
+  <div class="jumbotron" style="font-size:72px; background-color:#ffffff">Pencil-Tip Art</div>
+  <div class="panel-body">
+  
+        <p>
+        (1) Dalton Ghetti is a carpenter by trade. (2) He spends most of his time at work remodeling homes. (3) He spends his free time, however, on a very unusual hobby. 
+        (4) He creates sculptures from the tips of pencils.
+        </p>
+        <p>
+        (5) When Ghetti was a child growing up in São Paulo, Brazil, he and his friends used pocketknives to sharpen their pencils. (6) Ghetti learned how to carve his friends’ names 
+        into pencils. (7) He would then give the pencils to his friends as gifts. (8) As he grew older, he carved large pieces from wood, but he was always much more interested in
+        small pieces. (9) One day he decided that into the tip of a pencil he would carve a miniature sculpture. (10) Ghetti’s unique hobby was born!
+        </p>
+        <p>
+        (11) Today Ghetti uses only three tools to create his sculptures: a razor blade, a sewing needle, and a sculpting knife. (12) He now lives in Bridgeport, Connecticut. 
+        (13) Among Ghetti’s many creations are a tiny chair, a shoe, a mailbox, and a church. (14) He has even carved aminiature Elvis Presley into the tip of a pencil. (15)
+        Most sculptures take several months for Ghetti to create. (16) However, some projects take longer. (17) Ghetti once carved a pencil into a series of 23 interlocking
+        chain links. (18) That project took two and a half years!
+        </p>
+        <p>
+        (19) Ghetti doesn’t sell his work. (20) He just enjoys making things for himself and his friends. (21) Occasionally, though, some of his miniature art is displayed in museums. 
+        (22) This pleases Ghetti because he wants people to notice small things.
+        </p>
+        <p>
+        (23) Ghetti used to get frustrated when they would break. (24) But a change in attitude has helped him. (25) Now he accepts the fact that delicate pieces are sometimes going to 
+        break. (26) As soon as he begins each project, he thinks, “I wonder how far I can get before it breaks!”
+        </p> 
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
